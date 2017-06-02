@@ -18,6 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('drf_autodocs.urls')),
-    url(r'^', include('provider.urls')),
+    url(r'^docs/', include('rest_framework_docs.urls')),
+    url(r'^api/', include('provider.urls')),
 ]
